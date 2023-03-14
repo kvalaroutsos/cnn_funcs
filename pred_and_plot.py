@@ -1,5 +1,6 @@
 def pred_and_plot(model, filename, class_names=class_names):
   """
+  FOR BINARY image classification
   Imports an image located as filename, makes a prediction with model, and
   plot the image with the predicted class as the title.
   """
