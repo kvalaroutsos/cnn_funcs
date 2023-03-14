@@ -1,3 +1,7 @@
+import random
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+
 def view_random_image(target_dir, target_class):
   # Set up the target directory
   target_folder=target_dir+'/'+target_class
