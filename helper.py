@@ -76,7 +76,7 @@ def view_random_image(target_dir, target_class):
   """
   Give the target dir (str) and the target class (str) to get a random image
   """
-  
+  import random
   import matplotlib.pyplot as plt
   import matplotlib.image as mpimg
   # Set up the target directory
