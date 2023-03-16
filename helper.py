@@ -1,4 +1,11 @@
 # Create a function that import the image and reshape it to thr proper forms
+import random
+import os
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+
+
+
 def load_and_prep_image(filename,img_shape=224):
   """
   Read the image from filename, turns it to a tensor and reshape it to (img_shape, img_shape, color_channels)
