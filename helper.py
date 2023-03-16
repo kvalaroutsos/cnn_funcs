@@ -13,7 +13,7 @@ def load_and_prep_image(filename,img_shape=224):
   return img
 
 
- Plot the validation and training curves separately
+ #Plot the validation and training curves separately
 def plot_loss_curves(history):
 
   loss=history.history['loss']
