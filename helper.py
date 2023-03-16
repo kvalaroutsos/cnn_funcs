@@ -1,7 +1,7 @@
 # Create a function that import the image and reshape it to thr proper forms
 def load_and_prep_image(filename,img_shape=224):
   """
-  Read the image from filename, turns it to atensor and reshape it to (img_shape, img_shape, color_channels)
+  Read the image from filename, turns it to a tensor and reshape it to (img_shape, img_shape, color_channels)
   """
   img=tf.io.read_file(filename)
   # Decode the read file to a tensor
@@ -15,7 +15,11 @@ def load_and_prep_image(filename,img_shape=224):
 
 #Plot the validation and training curves separately
 def plot_loss_curves(history):
-
+  """
+  Import the history of a tf model
+  """
+  
+  import matplotlib.pyplot as plt
   loss=history.history['loss']
   val_loss=history.history['val_loss']
 
@@ -41,7 +45,7 @@ def plot_loss_curves(history):
 
 def pred_and_plot(model, filename, class_names):
   """
-  THIS is for MULTICLASS predictions.
+  THIS is for MULTICLASS and BINARY  predictions.
   Imports an image located as filename, makes a prediction with model, and
   plot the image with the predicted class as the title. 
   """
@@ -68,6 +72,12 @@ def pred_and_plot(model, filename, class_names):
   plt.axis(False)
 
 def view_random_image(target_dir, target_class):
+  """
+  Give the target dir (str) and the target class (str) to get a random image
+  """"
+  import random
+  import matplotlib.pyplot as plt
+  import matplotlib.image as mpimg
   # Set up the target directory
   target_folder=target_dir+'/'+target_class
   # Get a random image path
