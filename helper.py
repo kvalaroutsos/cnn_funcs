@@ -39,7 +39,7 @@ def plot_loss_curves(history):
   plt.xlabel('epochs')
   plt.legend()
 
-def pred_and_plot(model, filename, class_names=class_names):
+def pred_and_plot(model, filename, class_names):
   """
   THIS is for MULTICLASS predictions.
   Imports an image located as filename, makes a prediction with model, and
