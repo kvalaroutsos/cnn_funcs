@@ -54,7 +54,7 @@ def pred_and_plot(model, filename, class_names):
 
   # Make the prediction
   pred=model.predict(tf.expand_dims(img,axis=0))
-  print(pred)
+  
 
   # Get the predicted class
 
@@ -72,6 +72,7 @@ def pred_and_plot(model, filename, class_names):
   plt.axis(False)
 
 def view_random_image(target_dir, target_class):
+  
   """
   Give the target dir (str) and the target class (str) to get a random image
   """"
@@ -82,7 +83,7 @@ def view_random_image(target_dir, target_class):
   target_folder=target_dir+'/'+target_class
   # Get a random image path
   random_image=random.sample(os.listdir(target_folder),1)
-  print(random_image)
+  
 
   # Read in the image and plot it using matplotlib
 
