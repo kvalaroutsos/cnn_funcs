@@ -1,11 +1,10 @@
 # Create a function that import the image and reshape it to thr proper forms
 import random
 import os
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
 
 
 
+import tensorflow as tf 
 def load_and_prep_image(filename,img_shape=224):
   """
   Read the image from filename, turns it to a tensor and reshape it to (img_shape, img_shape, color_channels)
@@ -19,14 +18,15 @@ def load_and_prep_image(filename,img_shape=224):
   img=img/255.
   return img
 
-
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
 #Plot the validation and training curves separately
 def plot_loss_curves(history):
   """
   Import the history of a tf model
   """
   
-  import matplotlib.pyplot as plt
+  
   loss=history.history['loss']
   val_loss=history.history['val_loss']
 
