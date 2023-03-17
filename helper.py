@@ -50,6 +50,7 @@ def plot_loss_curves(history):
   plt.xlabel('epochs')
   plt.legend()
 
+import tensorflow as tf 
 def pred_and_plot(model, filename, class_names):
   """
   THIS is for MULTICLASS and BINARY  predictions.
