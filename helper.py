@@ -77,7 +77,10 @@ def pred_and_plot(model, filename, class_names):
   plt.imshow(img)
   plt.title(f'Prediction: {pred_class}')
   plt.axis(False)
-
+  
+  
+import random
+  
 def view_random_image(target_dir, target_class):
   
   """
